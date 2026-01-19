@@ -40,3 +40,5 @@ out/
 
 *.class
 *.log
+
+**/src/main/java/com.lucasteixeira.bank/anotacoes
