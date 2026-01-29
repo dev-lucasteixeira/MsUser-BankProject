@@ -55,6 +55,12 @@ public class UserController {
         return ResponseEntity.ok(userService.updatePassword(userDTO, email));
     }
 
+    @PatchMapping("/update-activity")
+    public ResponseEntity<UserDTO> updateActivity(@RequestBody UserDTO userDTO){
+        String email = SecurityContextHolder.getContext().getAuthentication().getName();
+        return ResponseEntity.ok(userService.updateActivity(userDTO, email));
+    }
+
     @PatchMapping("/update-user")
     public ResponseEntity<UserDTO> updateAccountPartial(@RequestBody UserDTO userDTO){
         String email = SecurityContextHolder.getContext().getAuthentication().getName();

@@ -12,7 +12,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Cpf {
 
-    String message() default "CPF inválido";
+    String message() default "O formato do CPF é inválido";
 
     Class<?>[] groups() default {};
 

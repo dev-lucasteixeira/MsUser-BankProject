@@ -51,6 +51,7 @@ dependencies {
     // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-impl
     runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.12.6'
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+    testImplementation 'com.h2database:h2'
 }
 
 tasks.named('test') {
